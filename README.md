@@ -1,75 +1,20 @@
-# Nuxt Minimal Starter
+# Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern portfolio website built with **Nuxt 4**, **Vue 3**, and **Tailwind CSS**. Deployed with Firebase.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- ⚡ Fast and responsive design
+- 🎨 Built with Tailwind CSS for beautiful styling
+- 🔥 Firebase integration for deployment and backend services
+- 🚀 Server-side rendering with Nuxt 4
+- 📱 Fully responsive and mobile-friendly
+- ⚙️ TypeScript support
 
-```bash
-# npm
-npm install
+## Tech Stack
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **Framework**: Nuxt 4
+- **UI Library**: Vue 3
+- **Styling**: Tailwind CSS
+- **Backend**: Firebase
+- **Language**: TypeScript
