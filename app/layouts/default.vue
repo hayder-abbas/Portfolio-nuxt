@@ -13,7 +13,7 @@
 						>
 							H
 						</div>
-						<span class="text-xl font-bold gradient-text hidden sm:inline">
+						<span class="text-xl font-bold gradient-text sm:inline">
 							HayderAbbas
 						</span>
 					</NuxtLink>

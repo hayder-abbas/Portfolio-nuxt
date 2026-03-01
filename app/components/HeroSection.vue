@@ -20,7 +20,7 @@
 			<h1
 				class="flex flex-col text-5xl md:text-7xl font-bold mb-4 animate-slide-up"
 			>
-				<span class="gradient-text">I'm Hayder</span>
+				<span class="gradient-text py-4">I'm Hayder</span>
 				<span class="text-white">Full-Stack Developer</span>
 			</h1>
 
@@ -37,7 +37,9 @@
 				class="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up"
 				style="animation-delay: 0.2s"
 			>
-				<a href="#" class="button-primary" download>Download Resume</a>
+				<a href="/Hayder_Abbas_resume.pdf" class="button-primary" download>
+					Download Resume
+				</a>
 			</div>
 
 			<!-- Scroll indicator -->
