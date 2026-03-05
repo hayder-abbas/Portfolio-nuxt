@@ -1,3 +1,32 @@
+<script setup lang="ts">
+	const mobileMenuOpen = ref(false);
+
+	// Close mobile menu when clicking on navigation link
+	function closeMenu() {
+		mobileMenuOpen.value = false;
+	}
+
+	// Add event listener for scroll reveal animations
+	onMounted(() => {
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: "0px 0px -50px 0px",
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("visible");
+				}
+			});
+		}, observerOptions);
+
+		document.querySelectorAll(".scroll-reveal").forEach((el) => {
+			observer.observe(el);
+		});
+	});
+</script>
+
 <template>
 	<div>
 		<!-- Navigation Header -->
@@ -9,9 +38,13 @@
 					<!-- Logo -->
 					<NuxtLink to="/" class="flex items-center gap-2 group">
 						<div
-							class="w-10 h-10 rounded-lg bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-white group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300"
+							class="w-10 h-10 rounded-lg bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300"
 						>
-							H
+							<img
+								src="/images/logo.png"
+								alt="Logo"
+								class="w-full h-full rounded-lg"
+							/>
 						</div>
 						<span class="text-xl font-bold gradient-text sm:inline">
 							HayderAbbas
@@ -64,20 +97,26 @@
 					class="md:hidden mt-4 space-y-2 border-t border-white/10 pt-4"
 				>
 					<a
+						@click="closeMenu()"
 						href="#about"
 						class="block py-2 text-gray-300 hover:text-white transition-colors"
-						>About</a
 					>
+						About
+					</a>
 					<a
+						@click="closeMenu()"
 						href="#skills"
 						class="block py-2 text-gray-300 hover:text-white transition-colors"
-						>Skills</a
 					>
+						Skills
+					</a>
 					<a
+						@click="closeMenu()"
 						href="#projects"
 						class="block py-2 text-gray-300 hover:text-white transition-colors"
-						>Projects</a
 					>
+						Projects
+					</a>
 				</div>
 			</nav>
 		</header>
@@ -148,32 +187,3 @@
 		</footer>
 	</div>
 </template>
-
-<script setup lang="ts">
-	const mobileMenuOpen = ref(false);
-
-	// Close mobile menu when clicking on navigation link
-	const closeMenu = () => {
-		mobileMenuOpen.value = false;
-	};
-
-	// Add event listener for scroll reveal animations
-	onMounted(() => {
-		const observerOptions = {
-			threshold: 0.1,
-			rootMargin: "0px 0px -50px 0px",
-		};
-
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					entry.target.classList.add("visible");
-				}
-			});
-		}, observerOptions);
-
-		document.querySelectorAll(".scroll-reveal").forEach((el) => {
-			observer.observe(el);
-		});
-	});
-</script>
