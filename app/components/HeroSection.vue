@@ -12,6 +12,7 @@
 						src="/images/Profile-picture.jpg"
 						alt="Heydar"
 						class="w-full h-full rounded-full object-cover"
+						loading="lazy"
 					/>
 				</div>
 			</div>

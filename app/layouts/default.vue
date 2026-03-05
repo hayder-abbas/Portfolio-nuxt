@@ -44,6 +44,7 @@
 								src="/images/logo.png"
 								alt="Logo"
 								class="w-full h-full rounded-lg"
+								loading="lazy"
 							/>
 						</div>
 						<span class="text-xl font-bold gradient-text sm:inline">

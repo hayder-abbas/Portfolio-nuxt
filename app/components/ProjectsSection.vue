@@ -66,6 +66,7 @@
 							src="/images/hisouby-thumb.png"
 							alt="Interactive card details form"
 							class="w-full h-full"
+							loading="lazy"
 						/>
 						<div
 							class="absolute inset-0 bg-linear-to-t from-gray-950 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -116,6 +117,7 @@
 							src="/images/card-form.jpg"
 							alt="Interactive card details form"
 							class="w-full h-full"
+							loading="lazy"
 						/>
 						<div
 							class="absolute inset-0 bg-linear-to-t from-gray-950 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
