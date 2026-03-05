@@ -62,7 +62,11 @@
 					<div
 						class="h-48 bg-linear-to-br from-purple-600 to-purple-900 flex items-center justify-center text-6xl overflow-hidden relative"
 					>
-						🧮
+						<img
+							src="/images/hisouby-thumb.png"
+							alt="Interactive card details form"
+							class="w-full h-full"
+						/>
 						<div
 							class="absolute inset-0 bg-linear-to-t from-gray-950 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
 						></div>
@@ -111,6 +115,7 @@
 						<img
 							src="/images/card-form.jpg"
 							alt="Interactive card details form"
+							class="w-full h-full"
 						/>
 						<div
 							class="absolute inset-0 bg-linear-to-t from-gray-950 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
