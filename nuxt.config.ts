@@ -23,6 +23,7 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: "apple-mobile-web-app-title", content: "HayderAbbas" },
+        { name: "theme-color", content: "#030712" },
       ],
     }
   }
