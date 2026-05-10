@@ -38,7 +38,7 @@
         class="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up"
         style="animation-delay: 0.2s"
       >
-        <a href="/Hayder_Abbas_resume.pdf" class="button-primary" download>
+        <a href="/Hayder_Abbas_Full-Stack.pdf" class="button-primary" download>
           Download Resume
         </a>
       </div>
